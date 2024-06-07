@@ -1,5 +1,6 @@
 package com.alibaba.spring.util;
 
+import java.util.Collection;
 import org.springframework.core.annotation.AnnotationAttributes;
 import org.springframework.core.env.Environment;
 import org.springframework.core.env.PropertyResolver;
@@ -201,7 +202,8 @@ public abstract class AnnotationUtils {
     public static Map<String, Object> getAttributes(Map<String, Object> annotationAttributes,
                                                     PropertyResolver propertyResolver, String... ignoreAttributeNames) {
 
-        Set<String> ignoreAttributeNamesSet = new HashSet<String>(arrayToList(ignoreAttributeNames));
+        Set<String> ignoreAttributeNamesSet = new HashSet<String>(
+                (Collection<? extends String>) arrayToList(ignoreAttributeNames));
 
         Map<String, Object> actualAttributes = new LinkedHashMap<String, Object>();
 

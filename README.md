@@ -1,9 +1,8 @@
 # A support module of spring-context
 
-=====================
+Current project that extends `spring-context` is based on Spring Framework 6.1.8
 
-Current project that extends `spring-context` is based on Spring Framework 3.2.x +
-
+Support jdk 17+
 
 ## Release version
 
@@ -23,7 +22,7 @@ Current project that extends `spring-context` is based on Spring Framework 3.2.x
     <dependency>
         <groupId>com.alibaba.spring</groupId>
         <artifactId>spring-context-support</artifactId>
-        <version>1.0.11</version>
+        <version>1.0.12</version>
     </dependency>
 
     ......
@@ -31,20 +30,5 @@ Current project that extends `spring-context` is based on Spring Framework 3.2.x
 </dependencies>
 ````
 
-If your project failed to resolve the dependency, try to add the following repository:
-```xml
-    <repositories>
-        <repository>
-            <id>sonatype-nexus</id>
-            <url>https://oss.sonatype.org/content/repositories/releases</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-        </repository>
-    </repositories>
-```
-
-
 ## Document
-
-TODO: Working in Process
+ forked from alibaba/spring-context-support, you need deploy to your own maven repository.
